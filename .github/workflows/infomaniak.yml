@@ -2,18 +2,18 @@ name: Infomaniak
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}
-      cancel-in-progress: false # Can cause difficulties to publish when lots of changes are done
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 1    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 1
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -22,22 +22,21 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: 'lts/*'
           cache: 'yarn'
       - name: Install JS dependencies
         run: yarn install --frozen-lockfile
       - name: Build
-        run: yarn osuny build
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
+        run: hugo -e production --minify
+      - name: SFTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
-      - name: Adding Known Hosts
-        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-      - name: Deploy with rsync
-        run: rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" ./public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_WORKDIR }}/
-      - name: Notification Slack en cas d'échecs
+          server: ${{ secrets.FTP_HOSTNAME }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ${{ secrets.FTP_LOCAL_DIR }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+      - name: Notification Slack en cas d'échec
         uses: ravsamhq/notify-slack-action@2.3.0
         if: always()
         with:
