@@ -1,0 +1,115 @@
+body, html {
+    min-width: 100%;
+    max-width: 100%;
+
+    min-height: 100%;
+    max-height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+.header-background-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    max-height: 100vh;
+    overflow: hidden;
+
+    z-index: -1;
+}
+
+.header-background {
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    display: block;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+    padding-left: 150px;
+
+    gap: 32px;
+
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Space Grotesk", monospace;
+}
+
+.header-greetings {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: var(--color-0);
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.header-headlines {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    height: 5.5em;
+    overflow-y: hidden;
+}
+
+.header-headline {
+    font-size: 4em;
+    font-weight: regular;
+    padding: 0;
+    margin: 0;
+
+    color: var(--color-1);
+
+    transform: translateY(-200%);
+    transition: transform .45s cubic-bezier(.54,-0.43,.5,1.02);
+}
+
+.header-call-to-action {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.blog-button {
+
+    color: var(--color-0);
+    transition: all .25s ease-in-out;
+    box-sizing: border-box;
+
+    border: 3px solid transparent;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    background-color: transparent;
+
+}
+
+.blog-button::after {
+    height: 0;
+}
+
+.blog-button:hover {
+    transform: scale(1.05);
+    border: 3px solid var(--color-foreground);
+    background-color: var(--color-background);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
+}
+
