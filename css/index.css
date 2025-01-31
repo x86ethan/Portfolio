@@ -10,7 +10,7 @@ body, html {
 }
 
 .header-background-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -31,13 +31,20 @@ body, html {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+
+    padding: 0 150px;
+}
+
+.header-information {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    height: 100vh;
-    padding-left: 150px;
 
     gap: 32px;
 
@@ -82,12 +89,6 @@ header {
     transition: transform .45s cubic-bezier(.54,-0.43,.5,1.02);
 }
 
-.header-call-to-action {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
 .blog-button {
 
     color: var(--color-0);
@@ -113,3 +114,195 @@ header {
     box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
 }
 
+.header-social-elements {
+    position: relative;
+    width: 236px;
+    height: 344px;
+}
+
+
+.social-element {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    box-sizing: content-box;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .50);
+    backdrop-filter: blur(10px);
+
+    border: 1.5px solid rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .15);
+
+    transform: scale(75%);
+    transition: all .35s ease-in-out;
+}
+
+.social-element:hover {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
+    transform: scale(80%);
+}
+
+#linkedin {
+    transform: rotate(7deg) scale(75%);
+    top: 0; left: 96px;
+}
+
+#linkedin:hover {
+    transform: rotate(7deg) scale(80%);
+}
+
+#github {
+    transform: scale(75%) rotate(2deg);
+    top: 60px; left: 0;
+}
+
+#github:hover {
+    transform: scale(80%) rotate(2deg);
+}
+
+#mail {
+    transform: scale(75%) rotate(-2deg);
+    top: 96px; left: 96px;
+}
+
+#mail:hover {
+    transform: scale(80%) rotate(-2deg);
+}
+
+#fiverr {
+    transform: scale(75%) rotate(-4deg);
+    top: 160px;
+    left: -10px; 
+}
+
+#fiverr:hover {
+    transform: scale(80%) rotate(-4deg);
+}
+
+section {
+    background-color: var(--color-background);
+}
+
+section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 150px;
+
+    height: 100%;
+    min-height: 100vh;
+
+}
+
+.section-2-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-title {
+    font-family: "Space Grotesk", monospace;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.section-2-text {
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.section-2-image {
+    height: 450px;
+    width: auto;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.spacer {
+    height: 10px;
+}
+
+#section-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-category-title {
+    font-family: "Space Grotesk", monospace;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.skill-image {
+    height: 40px;
+    width: 40px;
+}
+
+.skill-content {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 1em;
+
+    /* max-width: 50vw; */
+}

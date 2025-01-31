@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
@@ -16,8 +16,9 @@
 <body>
 
     <div class="header-background-container">
-        <video class="header-background" autoplay muted loop>
+        <video class="header-background" autoplay muted loop playsinline>
             <source src="assets/header-background.webm" type="video/webm">
+            <source src="assets/header-background.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -29,24 +30,150 @@
         </div>
     </nav>
 
-    <header>
+    <header id="header">
 
-        <div class="header-title">
-            <h1 class="header-greetings">Hi, I'm Ethan Robert,</h1>
-            <div class="header-headlines">
-                <h1 class="header-headline">UI/UX Designer.</h1>
-                <h1 class="header-headline">Web Developer.</h1>
-                <h1 class="header-headline">Full-Stack Dev.</h1>
-                <h1 class="header-headline">Software Engineer.</h1>
+        <div class="header-information">
+
+            <div class="header-title">
+                <h1 class="header-greetings">Hi, I'm Ethan Robert,</h1>
+                <div class="header-headlines">
+                    <h1 class="header-headline">UI/UX Designer.</h1>
+                    <h1 class="header-headline">Web Developer.</h1>
+                    <h1 class="header-headline">Full-Stack Dev.</h1>
+                    <h1 class="header-headline">Software Engineer.</h1>
+                </div>
             </div>
+
+            <div class="buttons-wrapper">
+                <a href="projects.html" class="button button-1">See my projects</a>
+                <a href="#section-2" class="button button-2">Explore my universe ↓</a>
+            </div>
+
         </div>
 
-        <div class="header-call-to-action">
-            <a href="projects.html" class="button button-1">See my projects</a>
-            <a href="#section-1" class="button button-2">Explore my universe ↓</a>
+        <div class="header-social-elements">
+            <a href="www.linkedin.com/in/ethan-robert-a88385339" target="_blank" class="social-element" id="linkedin">
+                <img src="assets/social/linkedin.png" alt="in">
+            </a>
+            <a href="https://github.com/x86ethan" target="_blank" class="social-element" id="github">
+                <img src="assets/social/github.png" alt="gh">
+            </a>
+
+            <!-- Another one for the mail element -->
+            <a href="mailto:ethan.robert@ik.me" class="social-element" id="mail">
+                <img src="assets/social/mail.png" alt="mail">
+            </a>
+
+            <!-- And the last one for fiverr -->
+            <a href="https://www.fiverr.com/s/GzgNBG3" target="_blank" class="social-element" id="fiverr">
+                <img src="assets/social/fiverr.png" alt="fiverr">
+            </a>
         </div>
 
     </header>
+
+    <section id="section-2">
+        
+        <div class="section-2-content-wrapper">
+            <h1 class="section-title">About Me</h1>
+            <p class="section-2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt sed neque a consectetur. Nulla facilisi. Maecenas vel lacinia odio. Morbi sodales, purus quis tempus molestie.</p>
+            <p class="section-2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt sed neque a consectetur. Nulla facilisi.</p>
+            <div class="spacer"></div>
+            <div class="buttons-wrapper">
+                <a href="#section-3" class="button button-1">See the tools I use ↓</a>
+                <a href="#header" class="button button-2">↑</a>
+            </div>   
+        </div>
+
+        <img src="assets/profile.png" alt="Profile Picture" class="section-2-image">
+
+    </section>
+
+    <section id="section-3">
+
+        <h1 class="section-title">My Skills</h1>
+        <div class="skills-wrapper">
+            <div class="skills-category">
+                <h2 class="skill-category-title">Languages</h2>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/python.png" alt="Python">
+                        <h3 class="skill-title">Python</h3>
+                    </div>
+                    <p class="skill-content">
+                        Python is the first programming language I have ever learned. I have been using it for over 8 years.
+                    </p>
+                </div>
+                <!-- Add two other skills in this category, one for C++ and one for web languages -->
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/c++.png" alt="C++">
+                        <h3 class="skill-title">C++</h3>
+                    </div>
+                    <p class="skill-content">
+                        C++ is the second programming language I have learned. I have been using it for over 5 years.
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/web.png" alt="HTML">
+                        <h3 class="skill-title">HTML</h3>
+                    </div>
+                    <p class="skill-content">
+                        HTML is the first web language I have learned. I have been using it for over 6 years.
+                    </p>
+                </div>
+            </div>
+            <!-- Add two other categories: one for programming tools (visual studio code, linux) and one for design tools (figma & coolors?.co)-->
+            <div class="skills-category">
+                <h2 class="skill-category-title">Programming Tools</h2>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/vscode.png" alt="Visual Studio Code">
+                        <h3 class="skill-title">Visual Studio Code</h3>
+                    </div>
+                    <p class="skill-content">
+                        Visual Studio Code is the first IDE I have ever used. I have been using it for over 5 years.
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/linux.png" alt="Linux">
+                        <h3 class="skill-title">Linux</h3>
+                    </div>
+                    <p class="skill-content">
+                        Linux is the first operating system I have ever used. I have been using it for over 6 years.
+                    </p>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h2 class="skill-category-title">Design Tools</h2>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/figma.png" alt="Figma">
+                        <h3 class="skill-title">Figma</h3>
+                    </div>
+                    <p class="skill-content">
+                        Figma is the first design tool I have ever used. I have been using it for over 3 years.
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img class="skill-image" src="assets/skills/image.png" alt="Coolors">
+                        <h3 class="skill-title">Coolors</h3>
+                    </div>
+                    <p class="skill-content">
+                        Coolors is the first color palette tool I have ever used. I have been using it for over 2 years.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="buttons-wrapper">
+            <a href="#section-2" class="button button-2">↑</a>
+        </div>
+        
+    </section>
     
 </body>
 

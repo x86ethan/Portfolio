@@ -9,6 +9,10 @@
 
 }
 
+body, html {
+    scroll-behavior: smooth;
+}
+
 .button {
     font-family: "Space Grotesk", monospace;
 
@@ -23,25 +27,27 @@
 
     transition: all .25s ease-in-out;
 
+    box-sizing: border-box;
+    height: fit-content;
+
 }
 
 .button:hover {
     transform: scale(1.05);
     box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
-    transition: transform .1s ease;
+    
 }
 
 .button:active {
     transform: scale(0.95);
     box-shadow: none;
+    transition: transform .1s ease;
 }
 
-
-
 .button-1 {
-
     background: linear-gradient(45deg, var(--color-3), var(--color-4));
     box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
+    padding: 18px 38px;
 }
 
 .button-2 {
@@ -102,3 +108,4 @@ nav {
 .nav-link:hover::after {
     width: 100%;
 }
+
