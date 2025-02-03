@@ -1,0 +1,30 @@
+@media screen and (max-width: 500px) {
+
+    nav {
+        padding: 75px 25px 25px 25px;
+    }
+    
+    .nav-header {
+        display: none;
+    }
+
+    .content-wrapper, #content-wrapper {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+
+    .project {
+        width: 100%;
+    }
+
+    .project-image, #project-image {
+        min-width: calc(100vw - 50px);
+    }
+
+    #project-image {
+        min-height: 50vw;
+        height: 100%;
+    }
+
+}
