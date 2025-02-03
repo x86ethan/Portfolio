@@ -1,0 +1,160 @@
+nav {
+    position: static;
+}
+
+
+.blog-button {
+    color: var(--color-foreground);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 75px;
+    gap: 25px;
+}
+
+.projects-expo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    width: 400px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    text-decoration: none;
+
+    position: relative;
+
+}
+
+.project::after {
+    content: '';
+    position: absolute;
+
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+
+    z-index: -2;
+    background-color: transparent;
+    transition: background-color .15s ease-in-out, top .2s ease, bottom .2s ease, left .2s ease, right .2s ease;
+    border-radius: 20px;
+
+}
+
+.project:hover::after {
+    background-color: rgba(0, 0, 0, 0.025);
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.project:nth-child(n) {
+    transition: transform .15s ease-in-out;
+}
+
+
+
+.project:hover:nth-child(n) {
+    transform: scale(98%);
+}
+
+.project:active:nth-child(n) {
+    transition: transform .1s ease;
+    transform: scale(95%);
+}
+
+.project-image {
+    min-width: 400px;
+    min-height: 200px;
+
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 15px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.project-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    
+    color: var(--color-foreground);
+    text-decoration: none;
+}
+
+.project-description {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+
+    color: var(--color-foreground);
+    text-decoration: none;
+}
+
+.projects-expo-title {
+    font-family: "Space Grotesk", monospace;
+    font-weight: bold;
+    font-size: 2.5em;
+
+    color: var(--color-0);
+    padding: 0;
+    margin: 0;
+}
+
+.projects-expo-filters {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.filter {
+    padding: 5px 25px;
+
+    border: double 2px transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, var(--color-4), var(--color-3));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    cursor: pointer;
+    
+
+    font-family: "Outfit", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.filter:hover {
+    background-clip: border-box;
+    background-origin: border-box;
+    background: linear-gradient(to right, var(--color-4), var(--color-3));
+    color: var(--color-background);
+    border: none;
+    padding: 7px 27px;
+}

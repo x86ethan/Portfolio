@@ -11,6 +11,11 @@
 
 body, html {
     scroll-behavior: smooth;
+
+    width: 100vw;
+
+    padding: 0;
+    margin: 0;
 }
 
 .button {
@@ -65,8 +70,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     padding: 75px;
 }
@@ -85,6 +91,8 @@ nav {
     font-weight: bold;
     text-decoration: none;
     color: var(--color-foreground);
+
+    height: fit-content;
 
     position: relative;
 }
@@ -109,3 +117,40 @@ nav {
     width: 100%;
 }
 
+.nav-link-protector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-button {
+
+    color: var(--color-0);
+    transition: all .25s ease-in-out;
+    box-sizing: border-box;
+
+    border: 3px solid transparent;
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    background-color: transparent;
+
+}
+
+.blog-button::after {
+    height: 0;
+}
+
+.blog-button:hover {
+    transform: scale(1.05);
+    border: 3px solid var(--color-foreground);
+    background-color: var(--color-background);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
+}
+
+.nav-header {
+    font-family: "Space Grotesk", monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--color-0);
+}

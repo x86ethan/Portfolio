@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "title": "ForKing",
+            "short_description": "Food delivery application",
+            "image": "assets/projects/forking.png",
+            "long_description": "ForKing is a food delivery app designed for quick, easy access to your favorite restaurants. With a clean, intuitive interface, it allows users to order, track deliveries in real-time, and get personalized recommandations.\n\nThe design focuses on simplicity and usability, featuring clear icons, smooth navigation, and a one-handed search bar for convenience. Vibrant yet subtle colors create a modern, friendly vibe, ensuring the ordering process is as seamless and enjoyable as possible.",
+            "tags": ["UI/UX Design"]
+        },
+        {
+            "title": "FitWave",
+            "short_description": "Your perfect companion to track progress, achieve goals, and stay motivated every day",
+            "image": "assets/projects/fitwave.png",
+            "long_description": "FitWave is a mobile app for sports enthusiasts, offering personalized activity tracking, tailored workout plans, and nutritional advice for any sport. It helps users track progress, stay motivated, and build a sustainable health routine. \n\nThe design emphasizes simplicity and engagement, with a modern, clean interface using soothing yet dynamics colors. Features like progress charts and motivational notifications ensure a smooth, enjoyable experience, making fitness accessible and inspiring every step of the way.",
+            "tags": ["UI/UX Design"]
+        }
+    ]
+}
+
