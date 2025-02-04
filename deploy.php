@@ -1,3 +1,3 @@
 <?php
-$output = shell_exec('cd $HOME/sites/ethan-robert.xyz &&  git pull origin master 2>&1');
+$output = shell_exec('git pull origin master');
 ?>
