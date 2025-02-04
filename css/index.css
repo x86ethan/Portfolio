@@ -85,7 +85,8 @@ header {
     color: var(--color-1);
 
     transform: translateY(-200%);
-    transition: transform .45s cubic-bezier(.54,-0.43,.5,1.02), opacity .3s ease-in-out;
+    /* transition: transform .45s cubic-bezier(.54,-0.43,.5,1.02), opacity .3s ease-in-out; */
+    transition: transform .45s ease, opacity .3s ease;
     opacity: 0;
 }
 
