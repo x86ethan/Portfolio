@@ -13,6 +13,13 @@
             "image": "assets/projects/fitwave.png",
             "long_description": "FitWave is a mobile app for sports enthusiasts, offering personalized activity tracking, tailored workout plans, and nutritional advice for any sport. It helps users track progress, stay motivated, and build a sustainable health routine. \n\nThe design emphasizes simplicity and engagement, with a modern, clean interface using soothing yet dynamics colors. Features like progress charts and motivational notifications ensure a smooth, enjoyable experience, making fitness accessible and inspiring every step of the way.",
             "tags": ["UI/UX Design"]
+        },
+        {
+            "title": "Flippr",
+            "short_description": "The first ethical dating app",
+            "image": "assets/projects/flippr.png",
+            "long_description": "Introducing an ethical dating app designed to foster meaningful connections. It features a ‘Do Not Disturb’ mode and match quotas to prevent overwhelm. Profiles are thoroughly verified for authenticity. No algorithms dictate matches, allowing users to explore freely. The app is built to be respectful and can be deleted once its purpose is fulfilled.",
+            "tags": ["UI/UX Design"]
         }
     ]
 }
