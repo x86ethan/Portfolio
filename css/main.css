@@ -30,7 +30,10 @@ html {
     color: var(--color-foreground);
     font-weight: bold;
 
-    transition: all 0.1s ease-in-out;
+    transition: transform .15s ease,
+                box-shadow .5s ease,
+                filter .5s ease;
+
 
     box-sizing: border-box;
     height: fit-content;
@@ -39,6 +42,8 @@ html {
 
 .button:hover {
     transform: scale(1.01);
+    filter: brightness(110%);
+    box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.3);
     /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1); */
 }
 
@@ -46,6 +51,7 @@ html {
     transform: scale(0.95);
     box-shadow: none;
     transition: transform 0.1s ease;
+    filter: saturate(150%);
 }
 
 .button-1 {
@@ -55,11 +61,24 @@ html {
     /* padding: 18px 38px; */
 }
 
+.button-1:hover {
+    box-shadow: 0px 0px 50px 30px rgba(198, 235, 190, 0.3);
+    border: 1px solid var(--color-2);
+}
+
+.button-1:active {
+    box-shadow: 0px 0px 50px 0px rgba(167, 220, 155, 0.3);
+}
+
 .button-2 {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(25px) brightness(130%);
     color: var(--color-foreground);
     /* border: 3px solid var(--color-foreground); */
+}
+
+.button-2:hover {
+    border: 1px solid rgb(150, 150, 150);
 }
 
 nav {
