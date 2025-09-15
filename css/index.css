@@ -129,8 +129,8 @@ header {
 
     padding: 15px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(25px);
 
     border: 1.5px solid #c6ebbe;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);

@@ -1,15 +1,15 @@
 * {
-    --color-background: #FFFFFF;
+    --color-background: #ffffff;
     --color-foreground: #000000;
     --color-0: #020887;
-    --color-1: #38369A;
-    --color-2: #7CA5B8;
-    --color-3: #A9DBB8;
-    --color-4: #C6EBBE;
-
+    --color-1: #38369a;
+    --color-2: #7ca5b8;
+    --color-3: #a9dbb8;
+    --color-4: #c6ebbe;
 }
 
-body, html {
+body,
+html {
     scroll-behavior: smooth;
 
     width: 100vw;
@@ -30,35 +30,36 @@ body, html {
     color: var(--color-foreground);
     font-weight: bold;
 
-    transition: all .25s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
     box-sizing: border-box;
     height: fit-content;
-
+    border: 0.2px ridge var(--color-foreground);
 }
 
 .button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
-    
+    transform: scale(1.01);
+    /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1); */
 }
 
 .button:active {
     transform: scale(0.95);
     box-shadow: none;
-    transition: transform .1s ease;
+    transition: transform 0.1s ease;
 }
 
 .button-1 {
-    background: linear-gradient(45deg, var(--color-3), var(--color-4));
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
-    padding: 18px 38px;
+    background: var(--color-4);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+
+    /* padding: 18px 38px; */
 }
 
 .button-2 {
-    background-color: var(--color-background);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px) brightness(130%);
     color: var(--color-foreground);
-    border: 3px solid var(--color-foreground);
+    /* border: 3px solid var(--color-foreground); */
 }
 
 nav {
@@ -71,18 +72,16 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 100vw;
     box-sizing: border-box;
     padding: 75px;
 }
 
 .nav-links {
-
     display: flex;
     flex-direction: row;
     gap: 30px;
-
 }
 
 .nav-link {
@@ -98,8 +97,7 @@ nav {
 }
 
 .nav-link::after {
-
-    content: '';
+    content: "";
     background-color: var(--color-foreground);
     position: absolute;
 
@@ -109,8 +107,7 @@ nav {
 
     height: 3px;
 
-    transition: width .2s ease-in-out;
-
+    transition: width 0.2s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -124,9 +121,8 @@ nav {
 }
 
 .blog-button {
-
     color: var(--color-0);
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     box-sizing: border-box;
 
     border: 3px solid transparent;
@@ -134,7 +130,6 @@ nav {
     border-radius: 15px;
 
     background-color: transparent;
-
 }
 
 .blog-button::after {
@@ -145,7 +140,7 @@ nav {
     transform: scale(1.05);
     border: 3px solid var(--color-foreground);
     background-color: var(--color-background);
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
 }
 
 .nav-header {
