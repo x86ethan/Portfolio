@@ -135,22 +135,30 @@ header {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 
     transform: scale(75%);
-    transition: all 0.35s ease-in-out;
+    transition: all .35s ease-in-out;
 }
 
 .social-element > img {
     filter: brightness(0);
+    transition: filter .35s ease;
 }
 
 .social-element:hover {
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
     transform: scale(80%);
-    transition: all 0.25s ease;
+    transition: all .25s ease;
+    background-color: #a9dbb876;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 20px #a9dbb840;
+}
+
+.social-element:hover > img {
+    filter: brightness(2);
 }
 
 .social-element:active {
     box-shadow: none;
-    transform: scale(50%);
+    transform: scale(25%);
 }
 
 .linkedin {
@@ -198,6 +206,7 @@ header {
 
 section {
     background-color: var(--color-background);
+    backdrop-filter: blur(50px);
 }
 
 section {
