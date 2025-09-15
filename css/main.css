@@ -8,6 +8,8 @@
     --color-4: #c6ebbe;
 }
 
+
+
 body,
 html {
     scroll-behavior: smooth;
@@ -16,6 +18,15 @@ html {
 
     padding: 0;
     margin: 0;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .button {
