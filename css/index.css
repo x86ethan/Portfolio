@@ -109,10 +109,8 @@ header {
     opacity: 1;
 }
 
-.header-social-elements {
+.header-social-picture {
     position: relative;
-    width: 236px;
-    height: 344px;
 }
 
 .social-element {
@@ -124,30 +122,42 @@ header {
     position: absolute;
 
     box-sizing: content-box;
-    width: fit-content;
-    height: fit-content;
+
+    height: 65px;
+    width: 65px;
 
     padding: 15px;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(25px);
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px) brightness(130%);
 
-    border: 1.5px solid #c6ebbe;
+    border: 0.5px solid var(--color-foreground);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 
     transform: scale(75%);
     transition: all 0.35s ease-in-out;
 }
 
+.social-element > img {
+    filter: brightness(0);
+}
+
 .social-element:hover {
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
     transform: scale(80%);
+    transition: all 0.25s ease;
+}
+
+.social-element:active {
+    box-shadow: none;
+    transform: scale(50%);
 }
 
 .linkedin {
     transform: rotate(7deg) scale(75%);
-    top: 0;
-    left: 96px;
+    bottom: 16px;
+    left: 48px;
+    z-index: 1;
 }
 
 .linkedin:hover {
@@ -156,8 +166,9 @@ header {
 
 .github {
     transform: scale(75%) rotate(2deg);
-    top: 60px;
+    bottom: 60px;
     left: 0;
+    z-index: 0;
 }
 
 .github:hover {
@@ -166,8 +177,9 @@ header {
 
 .mail {
     transform: scale(75%) rotate(-2deg);
-    top: 96px;
-    left: 96px;
+    bottom: -15px;
+    left: 105px;
+    z-index: 2;
 }
 
 .mail:hover {
