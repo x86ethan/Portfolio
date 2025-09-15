@@ -204,6 +204,70 @@ header {
     transform: scale(80%) rotate(-4deg);
 }
 
+@keyframes bottom-gradient-arrow-animation {
+
+    0% {
+        padding-top: 0;
+    }
+
+    35% {
+        padding-top: 0;
+    }
+
+    40% {
+        padding-top: 20px;
+    }
+
+
+    45% {
+        padding-top: 0;
+    }
+
+    55% {
+        padding-top: 0;
+    }
+
+    60% {
+        padding-top: 20px;
+    }
+
+
+    65% {
+        padding-top: 0;
+    }
+
+
+}
+
+.bottom-gradient {
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .1) 25%, rgba(255, 255, 255, 1) 100%);
+
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+
+    
+}
+
+.bottom-gradient * {
+    animation: 2s linear 0s infinite alternate bottom-gradient-arrow-animation;
+}
+
 section {
     background-color: var(--color-background);
     backdrop-filter: blur(50px);
