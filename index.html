@@ -24,10 +24,22 @@
     <body>
         <div class="header-background-container">
             <video class="header-background" autoplay muted loop playsinline>
-                <source src="assets/header-background.webm" type="video/webm" />
                 <source src="assets/header-background.mp4" type="video/mp4" />
+                <source src="assets/header-background.webm" type="video/webm" />
             </video>
         </div>
+
+        <nav class="nav-anchored">
+            <div class="nav-header">Ethan R.</div>
+            <div class="nav-links">
+                <a href='#header' class="nav-link">Home</a>
+                <a href="#section-about" class="nav-link">About</a>
+                <a href='#section-skills' class="nav-link">Skills</a>
+                <a href='projects.html' class="nav-link">Projects</a>
+            </div>
+        </nav>
+
+
 
         <header id="header">
             <div class="header-information">
@@ -60,7 +72,7 @@
                         >See my projects</a
                     >
                     <a href="#section-2" class="button button-2"
-                        >Explore my universe ↓</a
+                        >Explore my universe</a
                     >
                 </div>
             </div>
@@ -94,25 +106,7 @@
             </div>
         </header>
 
-        <section id="section-2">
-            <div class="section-2-content-wrapper">
-                <h1 class="section-title">About Me</h1>
-                <p class="section-2-text"></p>
-                <p class="section-2-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    tincidunt sed neque a consectetur. Nulla facilisi.
-                </p>
-                <div class="spacer"></div>
-                <div class="buttons-wrapper">
-                    <a href="#section-3" class="button button-1"
-                        >See the tools I use ↓</a
-                    >
-                    <a href="#header" class="button button-2">↑</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-3">
+        <section id="section-skills">
             <h1 class="section-title">My Skills</h1>
             <div class="skills-wrapper">
                 <div class="skills-category">
@@ -233,4 +227,5 @@
     </body>
 
     <script src="scripts/changeHeadline.js"></script>
+    <script src="scripts/scroll.js"></script>
 </html>
