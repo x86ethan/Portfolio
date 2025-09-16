@@ -8,6 +8,18 @@
     --color-4: #c6ebbe;
 }
 
+#cursor-aura {
+	
+	position: fixed; /* Il reste à sa place même quand tu scrolles */
+  pointer-events: none; /* Il n'interfère pas avec les clics */
+  border-radius: 50%; /* Pour qu'il soit rond */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%); /* L'effet de halo */
+  transform: translate(-50%, -50%); /* Pour centrer le halo sur le pointeur */
+  transition: transform 0.1s ease-out; /* Pour un mouvement fluide */
+  z-index: -1; /* Pour qu'il soit au-dessus de tout */
+  width: 600px; /* Taille du halo */
+  height: 600px; /* Taille du halo */
+}
 
 
 body,
@@ -127,7 +139,6 @@ nav * {
     backdrop-filter: blur(25px) brightness(130%);
     
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-
 }
 
 nav > .nav-header {
@@ -180,6 +191,10 @@ nav > .nav-links > a {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-link-active::after {
+	width: 100%;
 }
 
 .nav-link-protector {
