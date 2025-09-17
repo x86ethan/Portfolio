@@ -7,11 +7,10 @@ nav {
     color: var(--color-foreground);
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0 75px;
+#section-projects {
+
     gap: 25px;
+
 }
 
 .projects-expo {
@@ -24,7 +23,7 @@ nav {
 }
 
 .project {
-    width: 400px;
+    width: 350px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -78,7 +77,7 @@ nav {
 }
 
 .project-image {
-    min-width: 400px;
+    min-width: 350px;
     min-height: 200px;
 
     background-position: center;

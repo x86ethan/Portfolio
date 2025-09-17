@@ -42,7 +42,7 @@
                 <a href='#header' class="nav-link nav-link-active">Home</a>
                 <a href="#section-about" class="nav-link">About</a>
                 <a href='#section-skills' class="nav-link">Skills</a>
-                <a href='projects.html' class="nav-link">Projects</a>
+                <a href='#section-projects' class="nav-link">Projects</a>
             </div>
         </nav>
 
@@ -75,7 +75,7 @@
                 <div class="spacer"></div>
 
                 <div class="buttons-wrapper">
-                    <a href="projects.html" class="button button-1"
+                    <a href="#section-projects" class="button button-1"
                         >See my projects</a
                     >
                     <a href="#section-2" class="button button-2"
@@ -246,6 +246,23 @@
                 <a href="#section-2" class="button button-2">↑</a>
             </div>
         </section>
+
+        <script src="scripts/projects.js"></script>
+
+        <section id="section-projects">
+
+            <h1 class="projects-expo-title">My projects</h1>
+
+            <div class="projects-expo-filters" id="filters">
+
+            </div>
+
+            <div class="projects-expo" id="expo">
+
+            </div>
+
+
+        </section>
     </body>
     
     <div id="cursor-aura"></div>
@@ -253,4 +270,8 @@
     <script src="scripts/cursor_aura.js"></script>
     <script src="scripts/changeHeadline.js"></script>
     <script src="scripts/scroll.js"></script>
+
+    <script>
+        var projects = loadProjects();
+    </script>
 </html>
