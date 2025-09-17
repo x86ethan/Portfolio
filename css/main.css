@@ -9,23 +9,22 @@
 }
 
 #cursor-aura {
-	
-	position: fixed; /* Il reste à sa place même quand tu scrolles */
-  pointer-events: none; /* Il n'interfère pas avec les clics */
-  border-radius: 50%; /* Pour qu'il soit rond */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%); /* L'effet de halo */
-  transform: translate(-50%, -50%); /* Pour centrer le halo sur le pointeur */
-  transition: transform 0.1s ease-out; /* Pour un mouvement fluide */
-  z-index: -1; /* Pour qu'il soit au-dessus de tout */
-  width: 600px; /* Taille du halo */
-  height: 600px; /* Taille du halo */
+    position: fixed; /* Il reste à sa place même quand tu scrolles */
+    pointer-events: none; /* Il n'interfère pas avec les clics */
+    border-radius: 50%; /* Pour qu'il soit rond */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%); /* L'effet de halo */
+    transform: translate(-50%, -50%); /* Pour centrer le halo sur le pointeur */
+    transition: transform 0.1s ease-out; /* Pour un mouvement fluide */
+    z-index: -1; /* Pour qu'il soit au-dessus de tout */
+    width: 600px; /* Taille du halo */
+    height: 600px; /* Taille du halo */
 }
 
 
 body,
 html {
     scroll-behavior: smooth;
-    
+
     width: 100vw;
 
     padding: 0;
@@ -172,6 +171,14 @@ nav > .nav-links > a {
     color: var(--color-0);
 }
 
+nav > .nav-links > .nav-link::after {
+    background-color: var(--color-0);
+}
+
+.nav-free > .nav-links > .nav-link::after {
+    background-color: var(--color-foreground);
+}
+
 .nav-free > .nav-links > a {
     color: var(--color-foreground);
 }
@@ -196,7 +203,6 @@ nav > .nav-links > a {
 
 .nav-link::after {
     content: "";
-    background-color: var(--color-foreground);
     position: absolute;
 
     bottom: 0;
