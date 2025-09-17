@@ -23,17 +23,7 @@
     object-fit: cover;
 }
 
-.header-description {
-    font-family: "Outfit", sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5;
-    color: var(--color-foreground);
 
-    max-width: 75%;
-
-    margin: 0;
-    padding: 0;
-}
 
 .spacer {
     height: 16px;

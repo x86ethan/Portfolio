@@ -41,6 +41,10 @@ html {
     scrollbar-width: none;
 }
 
+.separator {
+    height: 26px;
+}
+
 .button {
     font-family: "Space Grotesk", monospace;
 
@@ -75,6 +79,18 @@ html {
     box-shadow: none;
     transition: transform 0.1s ease;
     filter: saturate(150%);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: var(--color-foreground);
+
+    max-width: 75%;
+
+    margin: 0;
+    padding: 0;
 }
 
 .button-1 {
