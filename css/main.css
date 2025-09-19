@@ -44,6 +44,8 @@ html {
     height: 26px;
 }
 
+
+
 .button {
     font-family: "Space Grotesk", monospace;
 
@@ -56,6 +58,12 @@ html {
     color: var(--color-foreground);
     font-weight: bold;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
     transition: transform .15s ease,
                 box-shadow .5s ease,
                 filter .5s ease;
@@ -65,6 +73,7 @@ html {
     height: fit-content;
     border: 0.2px ridge var(--color-foreground);
 }
+
 
 .button:hover {
     transform: scale(1.01);
