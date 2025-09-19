@@ -30,11 +30,16 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+    opacity: 1;
 
     text-decoration: none;
 
     position: relative;
 
+}
+
+.project:hover {
+    filter: brightness(110%);
 }
 
 .project::after {
@@ -48,13 +53,14 @@ nav {
 
     z-index: -2;
     background-color: transparent;
-    transition: background-color .15s ease-in-out, top .2s ease, bottom .2s ease, left .2s ease, right .2s ease;
+    transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out, top .2s ease, bottom .2s ease, left .2s ease, right .2s ease;
     border-radius: 20px;
 
 }
 
 .project:hover::after {
     background-color: rgba(0, 0, 0, 0.025);
+    box-shadow: 0px 0px 20px 15px rgba(0, 0, 0, 0.025);
     top: -10px;
     right: -10px;
     bottom: -10px;
@@ -62,13 +68,15 @@ nav {
 }
 
 .project:nth-child(n) {
-    transition: transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, filter .25s ease;
+    filter: brightness(1);
 }
 
 
 
 .project:hover:nth-child(n) {
     transform: scale(98%);
+    filter: brightness(1.1);
 }
 
 .project:active:nth-child(n) {
@@ -134,26 +142,37 @@ nav {
 .filter {
     padding: 5px 25px;
 
-    border: double 2px transparent;
+    border: .5px solid var(--color-foreground);
     border-radius: 50px;
-    background-image: linear-gradient(white, white), 
-                    linear-gradient(to right, var(--color-4), var(--color-3));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
 
     cursor: pointer;
     
-
     font-family: "Outfit", sans-serif;
     font-weight: normal;
     font-size: 1em;
+    transition: all .25s ease;
 }
 
 .filter:hover {
+    transform: scale(105%);
+    border: .5px solid rgb(150, 150, 150);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    transition: all .15s ease;
+}
+
+.filter:active {
+    transform: scale(98%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .05)
+}
+
+.filter.filter-active {
     background-clip: border-box;
     background-origin: border-box;
     background: linear-gradient(to right, var(--color-4), var(--color-3));
-    color: var(--color-background);
-    border: none;
-    padding: 7px 27px;
+    border: .5px solid var(--color-foreground);
+}
+
+.filter.filter-active:hover {
+    border: .5px solid var(--color-2);
+    transition: all .15s ease;
 }

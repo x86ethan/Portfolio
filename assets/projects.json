@@ -19,7 +19,7 @@
             "short_description": "The first ethical dating app",
             "image": "assets/projects/flippr.png",
             "long_description": "Introducing an ethical dating app designed to foster meaningful connections. It features a ‘Do Not Disturb’ mode and match quotas to prevent overwhelm. Profiles are thoroughly verified for authenticity. No algorithms dictate matches, allowing users to explore freely. The app is built to be respectful and can be deleted once its purpose is fulfilled.",
-            "tags": ["UI/UX Design"]
+            "tags": ["UI/UX Design", "Application"]
         }
     ]
 }

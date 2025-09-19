@@ -229,7 +229,9 @@
     <script src="scripts/changeHeadline.js"></script>
     <script src="scripts/scroll.js"></script>
 
-    <script>
-        var projects = loadProjects();
+    <script> 
+        loadProjects().then(projects => {
+            showProjects(projects);
+        })
     </script>
 </html>
