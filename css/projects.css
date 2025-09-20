@@ -36,6 +36,8 @@ nav {
 
     position: relative;
 
+    cursor: pointer;
+
 }
 
 .project:hover {
@@ -71,8 +73,6 @@ nav {
     transition: transform .15s ease-in-out, filter .25s ease;
     filter: brightness(1);
 }
-
-
 
 .project:hover:nth-child(n) {
     transform: scale(98%);
@@ -153,6 +153,18 @@ nav {
     transition: all .25s ease;
 }
 
+.project-view-filter {
+    padding: 5px 25px;
+
+    border: .5px solid var(--color-foreground);
+    border-radius: 50px;
+
+    
+    font-family: "Outfit", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
 .filter:hover {
     transform: scale(105%);
     border: .5px solid rgb(150, 150, 150);
@@ -175,4 +187,142 @@ nav {
 .filter.filter-active:hover {
     border: .5px solid var(--color-2);
     transition: all .15s ease;
+}
+
+#project-page {
+
+    position: fixed;
+    z-index: 2000;
+
+    top: 50px; 
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+
+    background-color: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(50px) brightness(120%);
+
+    border: .5px solid var(--color-foreground);
+    border-radius: 25px;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .25);
+
+    display: none;
+    flex-direction: row;
+
+    gap: 35px;
+
+    
+
+    padding: 75px;
+
+
+} 
+
+.project-text-wrapper {
+
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.project-text-wrapper h2 {
+
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+
+}
+
+.project-text-wrapper p {
+
+    line-height: 1.5;
+    font-size: 1.2em;
+    letter-spacing: -.2px;
+    max-width: fit-content;
+
+}
+
+#project-page::-webkit-scrollbar {
+    display: none;
+}
+
+.project-page-close-button {
+    position: fixed; 
+    z-index: 2001;
+
+    top: 10px;
+    right: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    border-radius: 25px;
+
+    transition: background-color .2s ease,
+    transform .3s ease,
+    box-shadow .2s ease;
+
+}
+
+.project-page-close-button:hover {
+    
+    background-color: #A44A3F;
+    transform: scale(102%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .05);
+}
+
+.project-page-close-button:hover svg {
+    filter: brightness(200);
+    
+}
+
+.project-page-close-button:active {
+
+    transform: scale(90%);
+    transition: transform .05s ease;
+
+}
+
+.project-links {
+    font-family: "Outfit", sans-serif;
+    font-size: 1em; 
+}
+
+.project-links a {
+
+    font-family: "Outfit", sans-serif;
+    font-size: 1em;
+
+    text-decoration: none;
+    color: var(--color-0);
+
+}
+
+#project-image {
+    max-width: 50%;
+    
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .15);
+}
+
+#project-title {
+    font-family: "Space Grotesk", monospace;
+    font-size: 2.25em;
+    font-weight: 700;
 }

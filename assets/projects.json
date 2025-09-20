@@ -1,25 +1,38 @@
 {
     "projects": [
         {
-            "title": "ForKing",
-            "short_description": "Food delivery application",
-            "image": "assets/projects/forking.png",
-            "long_description": "ForKing is a food delivery app designed for quick, easy access to your favorite restaurants. With a clean, intuitive interface, it allows users to order, track deliveries in real-time, and get personalized recommandations.\n\nThe design focuses on simplicity and usability, featuring clear icons, smooth navigation, and a one-handed search bar for convenience. Vibrant yet subtle colors create a modern, friendly vibe, ensuring the ordering process is as seamless and enjoyable as possible.",
-            "tags": ["UI/UX Design"]
+            "title": "Apple Transports",
+            "short_description": "A fictionnal carpooling application based on Apple's design philosophy.",
+            "image": "/assets/projects/apple-transports.png",
+            "tags": ["UI/UX Design", "Web Development"],
+            "intro": "Apple Transport was originally an educationnal project that aimed to imagine, design and produce an eco-friendly carpooling app based on the design of an existing company (Apple in this case). ",
+            "challenge": "The project aimed to be a showcase of our web design and development skills. Even though we weren't allowed to use any form of scripting, we wanted to make something great, something rememberable. The challenge also consisted into working as a team in a complex project. Some sides of the project weren't only about design and development. We also had to study the Apple company, its opportunities and threats on the market of eco-friendly carpooling apps.",
+            "tech": "Since we weren't allowed to use any form of scripting on these pages (bye bye fellow JavaScript), we had to double our efforts to produce a beautiful and intuitive interface written down in HTML and CSS languages. The design part was made using Figma, and the large collection of various icons SF Symbols provides.",
+            "lessons": "The biggest lesson I can take from this project isn't just about design or development. It's about teamwork. I truly learned how to manage working in a team with different members, who sometimes aren't experts in everything the project is made of. Working with git also was a bit of a teaching. I never used it for a project of this size before, and it was definitely a useful experience to get hands on this tool.",
+            "github": "https://github.com/x86ethan/SAE-RdB-Website",
+            "demo": "https://x86ethan.github.io/SAE-RdB-Website"
+        }, 
+        {
+            "title": "Decision-making tool for language stays",
+            "short_description": "A fictionnal tool to help creating student groups for language stays",
+            "image": "/assets/projects/lang-tool.png",
+            "tags": ["UI/UX Design", "Application", "Java"],
+            "intro": "This project is a bit of the \"final boss\" of the 1st year of the Bachelor's degree. This app isn't really useful, but it's a great showcase for the interface design and development skills we learned this year.",
+            "challenge": "The subject was simple: there was a need for a school to have a tool that could help define teenager pairs based on their hobbies, age, sex, and so on. And all this, using graphs theory and our interface courses. The criteria were also simple: the best app is the one which works the best and is the most usable.",
+            "tech": "We knew the project was asking us to use JavaFX, a lib that we didn't really used long before the beginning of the project. We started designing the app using Figma, then we used SceneBuilder to create high-fidelity mockups for our interface. At the same time, we started drawing UML diagrams for the structure of the project. It would split into 2 packages: one dedicated to the back-end of the project, the other one for the front-end, and that would use the first one to work. That's what we did.",
+            "lessons": "What we learned the most during this project is still not related to pure tech. Actually, we did well with JavaFX. The most complicated part was about keeping being rigorous with ourselves as the project progressed, and to respect deadlines. We did it by a hair's breadth! We had a lot of work at the end of the project, just to make sur everything worked fine, the tests passed, and the interface wasn't buggy. We then proceeded with the reports and document writing we had to do at the end of the project. This was really intense!",
+            "github": "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/E5/-/tree/main?ref_type=heads"
         },
         {
-            "title": "FitWave",
-            "short_description": "Your perfect companion to track progress, achieve goals, and stay motivated every day",
-            "image": "assets/projects/fitwave.png",
-            "long_description": "FitWave is a mobile app for sports enthusiasts, offering personalized activity tracking, tailored workout plans, and nutritional advice for any sport. It helps users track progress, stay motivated, and build a sustainable health routine. \n\nThe design emphasizes simplicity and engagement, with a modern, clean interface using soothing yet dynamics colors. Features like progress charts and motivational notifications ensure a smooth, enjoyable experience, making fitness accessible and inspiring every step of the way.",
-            "tags": ["UI/UX Design"]
-        },
-        {
-            "title": "Flippr",
-            "short_description": "The first ethical dating app",
-            "image": "assets/projects/flippr.png",
-            "long_description": "Introducing an ethical dating app designed to foster meaningful connections. It features a ‘Do Not Disturb’ mode and match quotas to prevent overwhelm. Profiles are thoroughly verified for authenticity. No algorithms dictate matches, allowing users to explore freely. The app is built to be respectful and can be deleted once its purpose is fulfilled.",
-            "tags": ["UI/UX Design", "Application"]
+            "title": "InfoPoly",
+            "short_description": "A video-game based on the popular board game 'Monopoly' that takes place in the IT department of the Universitary Institute of Technology of Lille.",
+            "image": "/assets/projects/plate.png",
+            "tags": ["Game", "Java"],
+            "intro": "Victory compiles square by square! You are a bachelor student, trying to pass every semester. However, this world is cruel, and you shall definitely not work or stay honest if you want to pass. You will insted exercise your power and your influence to earn progress and to corrupt the teachers. Each year is more and more difficult, and needs more and more influence to get through. The question now is: who will be the first, or maybe the only one, to graduate?",
+            "challenge": "This project is the huge boss that awaited us during all of 2025 summer. We already knew how it would happen: back to school, we would have a single hour class to explain the 2nd year, and then get dropped in the pool with 5 foreigners, and asked to code a game using the agile method. And all of this, in only 20 hours, with 2 hours long sprints. As it would be our game, we were all product owners. Who would be the scrum master would change 2 times a day. Now we were let to chose which type of game we wanted. We knew we whanted to do a board game, because we had only a few hours, and it was the best choice if we wanted to stay in the terminal, because with only 3 days to code, it would be impossible to come up at the end with some form of graphical user interface.",
+            "tech": "We knew we had to use Java. However, we were completely free regarding the lib or the support used. We knew it was impossible to achieve even a 2D user interface within only 3 days, so we came up with this powerful lib from Google: Lanterna. It allowed us to write efficient code that would put custom strings anywhere inside the terminal, dynamically erase parts of the screen, and manage dynamic user inputs.",
+            "lessons": "The huge lesson, the elephant in the room when it comes to this project, is the usage of a small form of the agile method. It was mainly an experiment in order to allow us making our own mind about the scrum method. We learned that the most important with it was to keep every member of the team busy, to communicate as a team, and to keep being efficient. We learned that one isolated problem could lead to an empty backlog at the end of the sprint.",
+            "github": "https://gitlab.univ-lille.fr/iut-info/p3.01/2025-2026/groupe-8"
         }
     ]
 }

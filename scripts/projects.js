@@ -89,7 +89,6 @@ async function showProjects(projects) {
     for (var i = 0; i < projects.length; i++) {
         newProjectExpo = document.createElement("a");
         newProjectExpo.classList.add("project");
-        newProjectExpo.href = "project.html?projectTitle=" + projects[i].title;
 
         newProjectImage = document.createElement("div");
         newProjectImage.classList.add("project-image");
@@ -108,6 +107,14 @@ async function showProjects(projects) {
 
         // Add filter tag directly inside HTML code for the future
         newProjectExpo.setAttribute("tags", projects[i].tags);
+
+        newProjectExpo.addEventListener('click', (event) => {
+            loadProject(event.currentTarget.children[1].innerHTML);
+            const projectPage = document.getElementById('project-page');
+            projectPage.style.display = 'flex';
+            projectPage.classList.remove('hidden');
+            
+        });
 
         projectsExpoElement.appendChild(newProjectExpo);
 
@@ -155,11 +162,10 @@ async function showProjects(projects) {
 
 }
 
-function loadProject() {
+function loadProject(title) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
-    var projectName = urlParams.get("projectTitle");
 
     // Get projects
     // New Query
@@ -172,16 +178,22 @@ function loadProject() {
     request.onload = function() {
         if (request.status === 200) {
             data = request.response;
-            showProject(data.projects, projectName);
+            showProject(data.projects, title);
         }
     };
 
 }
 
-function showProject(projects, projectName) {
+async function closeProjectPage() {
 
-    // Change page title
-    document.title = projectName + " | Ethan R.";
+    const projectPage = document.getElementById('project-page');
+    projectPage.style.display = 'none';
+    
+    
+
+}
+
+function showProject(projects, projectName) {
 
     var project;
     for (var i = 0; i < projects.length; i++) {
@@ -190,17 +202,76 @@ function showProject(projects, projectName) {
         }
     }
 
-    console.log(project);
-
     // Change project image
     var projectImage = document.getElementById("project-image");
-    projectImage.style.backgroundImage = "url(\"" + project.image + "\")";
+    projectImage.setAttribute("src", project.image);
 
     var projectTitle = document.getElementById("project-title");
     projectTitle.innerText = project.title;
 
-    var projectDescription = document.getElementById("project-description");
-    projectDescription.innerText = project.long_description;
+    // Add project filters
+
+    const tagElements = document.getElementById("project-view-filters");
+
+    tagElements.innerHTML = '';
+
+    var tagElement;
+
+    for (var i = 0 ; i < project.tags.length ; i++) {
+
+        tagElement = document.createElement('div');
+        tagElement.classList.add('project-view-filter');
+        tagElement.innerText = project.tags[i];
+
+        tagElements.appendChild(tagElement);
+
+    }
+
+    // Add GitHub & demo if existing
+    var projectLinks = document.getElementsByClassName("project-links")[0];
+    projectLinks.innerHTML = '';
+
+    if (project.github) {
+
+        var githubLink = document.createElement('a');
+        githubLink.setAttribute("href", project.github);
+        githubLink.setAttribute("target", "_blank");
+        githubLink.innerText = "View project code";
+
+        projectLinks.appendChild(githubLink);
+
+    }
+
+    if (project.demo) {
+        if (project.github) {
+            projectLinks.innerHTML += " | ";
+        }
+
+        var demoLink = document.createElement('a');
+        demoLink.setAttribute("href", project.demo);
+        demoLink.setAttribute("target", "_blank");
+        demoLink.innerText = "Play project";
+
+        projectLinks.appendChild(demoLink);
+    }
+
+    // Add textual content
+
+    var projectIntro = document.getElementById("project-intro");
+    projectIntro.innerText = project.intro;
+
+    var projectChallenge = document.getElementById("project-challenge"); 
+    projectChallenge.innerText = project.challenge; 
+
+    var projectTech = document.getElementById("project-tech"); 
+    projectTech.innerText = project.tech; 
+
+    var projectLessons = document.getElementById("project-teachings");
+    projectLessons.innerText = project.lessons;
+
+    
+    // var projectDescription = document.getElementById("project-description");
+    // projectDescription.innerText = project.long_description;
 
 
 }
