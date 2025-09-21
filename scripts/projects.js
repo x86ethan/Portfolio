@@ -58,13 +58,14 @@ async function filterProjects() {
         projects[i].style.display = 'flex';
     }
 
+    // Filtering rules: 
+    // Every project shown needs to have all enabled criteria
+
     for (var i = 0; i < projects.length; i++) {
         for (var j = 0; j < tags.length; j++) {
             console.log(projects[i].getAttribute("tags"));
             if (projects[i].getAttribute("tags").indexOf(tags[j]) === -1) {
                 projects[i].style.display = 'none';
-            } else {
-                projects[i].style.display = 'flex';
             }
         }
     }
