@@ -119,20 +119,23 @@
     }
 
     .header-headlines {
-        height: 2em;
+        height: 3em;
         max-width: 80%;
     }
 
+
     .header-headline, .header-greetings {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
+
     .header-headline {
-        height: 2em;
+        max-height: 3em;
+        min-height: 2.2em;
     }
 
     .header-description {
-        font-size: 1.3em;
+        font-size: 1.1em;
         max-width: 100%;
     }
 
