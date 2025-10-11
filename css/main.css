@@ -6,6 +6,10 @@
     --color-2: #7ca5b8;
     --color-3: #a9dbb8;
     --color-4: #c6ebbe;
+
+    -webkit-tap-highlight-color: transparent;
+
+
 }
 
 #cursor-aura {

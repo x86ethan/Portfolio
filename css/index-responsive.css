@@ -207,6 +207,12 @@
         height: 100%;
 
         font-size: .7em;
+        transition: transform .1s ease;
+
+    }
+
+    .nav-link:active {
+        transform: scale(95%);
     }
 
     .nav-link .icon {
@@ -226,6 +232,14 @@
         justify-content: space-between;
         align-items: center;
         gap: 5px;
+
+        transition: transform .2s ease;
+        
+    }
+
+    .language-selector:active {
+        transform: scale(95%);
+        
     }
 
     .language-selector .flag {
@@ -258,6 +272,10 @@
     .language-choice {
         font-size: 1.3em;
         padding: 15px;
+    }
+
+    .language-choice:active {
+        background-color: rgb(200, 200, 200);
     }
 
 
