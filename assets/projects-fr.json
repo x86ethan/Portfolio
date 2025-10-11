@@ -1,0 +1,38 @@
+{
+    "projects": [
+        {
+            "title": "Apple Transports",
+            "short_description": "Une application de covoiturage fictive inspirée de la philosophie de design d'Apple.",
+            "image": "/assets/projects/apple-transports.png",
+            "tags": ["UI/UX Design", "Développement Web"],
+            "intro": "Apple Transports était à l'origine un projet éducatif visant à imaginer, concevoir et produire une application de covoiturage écoresponsable basée sur le design d'une entreprise existante (Apple, dans ce cas).",
+            "challenge": "Ce projet se voulait être une vitrine de nos compétences en design et en développement web. Même si nous n'avions pas le droit d'utiliser de scripting, nous voulions créer quelque chose de mémorable. Le défi consistait aussi à travailler en équipe sur un projet complexe. Au-delà du design et du développement, nous devions aussi étudier l'entreprise Apple, ses opportunités et les menaces sur le marché du covoiturage écoresponsable.",
+            "tech": "Puisque nous n'avions pas le droit d'utiliser de scripting (adieu le JavaScript !), nous avons dû redoubler d'efforts pour produire une interface à la fois belle et intuitive en HTML et CSS. Le design a été réalisé avec Figma et la vaste collection d'icônes que SF Symbols met à disposition.",
+            "lessons": "La plus grande leçon que j'ai tirée de ce projet n'est pas technique, mais plutôt liée au travail d'équipe. J'ai vraiment appris à gérer un groupe avec des membres qui n'étaient pas toujours experts dans tous les aspects du projet. L'utilisation de Git a aussi été très formatrice. Je ne l'avais jamais utilisé pour un projet de cette envergure, et c'était une expérience très utile.",
+            "github": "https://github.com/x86ethan/SAE-RdB-Website",
+            "demo": "https://x86ethan.github.io/SAE-RdB-Website"
+        }, 
+        {
+            "title": "Outil d'aide à la décision pour séjours linguistiques",
+            "short_description": "Un outil fictif pour aider à la création de groupes d'étudiants lors de séjours linguistiques.",
+            "image": "/assets/projects/lang-tool.png",
+            "tags": ["UI/UX Design", "Application", "Java"],
+            "intro": "Ce projet est un peu le 'boss de fin' de la première année du BUT. Cette application n'est pas vraiment utile en soi, mais elle est une excellente vitrine des compétences en design d'interface et en développement que nous avons acquises cette année.",
+            "challenge": "Le sujet était simple : une école avait besoin d'un outil pour former des binômes d'adolescents en fonction de leurs centres d'intérêt, âge, sexe, etc. Le tout en utilisant la théorie des graphes et nos cours d'interfaces. Les critères étaient tout aussi clairs : la meilleure application serait la plus fonctionnelle et la plus ergonomique.",
+            "tech": "On nous a demandé d'utiliser JavaFX, une librairie que nous n'avions pas beaucoup utilisée. On a commencé par designer l'application sur Figma, puis on a utilisé SceneBuilder pour créer des maquettes haute-fidélité. En parallèle, on a dessiné des diagrammes UML pour structurer le projet en deux packages : un pour le back-end et l'autre pour le front-end, ce dernier utilisant le premier.",
+            "lessons": "La plus grande leçon de ce projet n'est toujours pas technique. Nous nous en sommes bien sortis avec JavaFX. Le plus compliqué a été de rester rigoureux et de respecter les délais, et on y est arrivé de justesse ! On a eu beaucoup de travail sur la fin pour s'assurer que tout fonctionnait, que les tests passaient, et que l'interface n'était pas buguée. Il a fallu ensuite rédiger les rapports et la documentation. C'était très intense !",
+            "github": "https://gitlab.univ-lille.fr/sae2.01-2.02/2025/E5/-/tree/main?ref_type=heads"
+        },
+        {
+            "title": "InfoPoly",
+            "short_description": "Un jeu vidéo inspiré du célèbre jeu de plateau Monopoly, qui se déroule au sein du département Informatique de l'IUT de Lille.",
+            "image": "/assets/projects/plate.png",
+            "tags": ["Jeu", "Java"],
+            "intro": "La victoire se construit case par case ! En tant qu'étudiant en BUT, tu essaies de valider chaque semestre. Mais le monde est cruel : il te faudra user de ton pouvoir et de ton influence pour avancer et corrompre les professeurs. Chaque année devient plus difficile et nécessite plus d'influence pour être validée. La question est : qui sera le premier, ou peut-être le seul, à être diplômé ?",
+            "challenge": "Ce projet était le grand défi de l'été 2025. On nous a lancés dans le grand bain : coder un jeu en 20 heures, avec 5 étrangers, en utilisant la méthode Agile, sur des sprints de 2 heures. Chacun était Product Owner et le Scrum Master changeait deux fois par jour. On était libres de choisir le type de jeu. On a opté pour un jeu de plateau, car on n'avait que 3 jours et c'était le meilleur choix si on voulait rester sur un jeu en console. C'était impossible de sortir une interface graphique en si peu de temps.",
+            "tech": "On devait utiliser Java. Pour le reste, on était totalement libres. On a choisi la librairie Lanterna de Google, car c'était impossible d'atteindre une interface graphique en 3 jours. Lanterna nous a permis d'écrire du code efficace pour afficher du texte personnalisé, effacer dynamiquement l'écran et gérer les entrées utilisateur.",
+            "lessons": "La plus grande leçon de ce projet, c'est l'utilisation d'une version simplifiée de la méthode Agile. C'était une expérience pour nous permettre de nous faire notre propre opinion sur la méthode Scrum. On a appris qu'il était essentiel de maintenir tous les membres de l'équipe occupés, de communiquer efficacement et de rester productifs. Un seul problème pouvait vider le backlog à la fin du sprint.",
+            "github": "https://gitlab.univ-lille.fr/iut-info/p3.01/2025-2026/groupe-8"
+        }
+    ]
+}

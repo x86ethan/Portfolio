@@ -1,11 +1,12 @@
 
+var PROJECTS_LOCATION
 
 function loadProjects() {
 
     return new Promise((resolve, reject) => {
         // New Query
         var request = new XMLHttpRequest();
-        request.open("GET", "/assets/projects.json");
+        request.open("GET", PROJECTS_LOCATION);
         request.responseType = 'json';
 
         var data;
@@ -80,10 +81,6 @@ async function showProjects(projects) {
     var newProjectTitle;
     var newProjectDescription;
     var newProjectImage;
-
-
-
-
 
     var tags = [];
 
@@ -171,7 +168,7 @@ function loadProject(title) {
     // Get projects
     // New Query
     var request = new XMLHttpRequest();
-    request.open("GET", "/assets/projects.json");
+    request.open("GET", PROJECTS_LOCATION);
     request.responseType = 'json';
 
     var data;

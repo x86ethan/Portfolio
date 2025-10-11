@@ -99,7 +99,7 @@ p {
     line-height: 1.5;
     color: var(--color-foreground);
 
-    max-width: 75%;
+    /* max-width: 75%; */
 
     margin: 0;
     padding: 0;
@@ -196,6 +196,12 @@ nav > .nav-links > .nav-link::after {
     color: var(--color-foreground);
 }
 
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -223,6 +229,7 @@ nav > .nav-links > .nav-link::after {
     width: 0;
 
     height: 3px;
+    background: black;
 
     transition: width 0.2s ease-in-out;
 }
@@ -240,6 +247,48 @@ nav > .nav-links > .nav-link::after {
     flex-direction: column;
     justify-content: center;
 }
+
+.language-selector {
+    cursor: pointer;
+}
+
+.language-choices {
+    display: none;
+
+    flex-direction: column;
+    padding: 25px;
+
+    position: fixed;
+    z-index: 200;
+    right: 20px;
+    top: 100px;
+
+    backdrop-filter: blur(25px) brightness(130%);
+    background-color: rgba(255, 255, 255, .2);
+    border: .5px solid black;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.language-choice {
+    font-family: "Outfit";
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color .1s ease;
+    color: initial;
+    text-decoration: none;
+}
+
+.language-choice:hover {
+    background-color: var(--color-4);
+}
+
+.language-choice:active {
+    filter: brightness(110%);
+}
+
 
 .blog-button {
     color: var(--color-0);

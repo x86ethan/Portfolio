@@ -35,9 +35,10 @@ strong {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
     align-items: center;
+    gap: 100px;
 
     box-sizing: border-box;
 
@@ -50,6 +51,7 @@ header {
     justify-content: center;
 
     gap: 16px;
+    width: 70vw;
 }
 
 .header-title {
@@ -60,7 +62,7 @@ header {
 }
 
 .header-greetings {
-    font-size: 4.5em;
+    font-size: 3em;
     font-weight: bold;
     color: var(--color-0);
 
@@ -73,12 +75,12 @@ header {
     flex-direction: column;
     justify-content: flex-start;
 
-    height: 5.5em;
+    height: 4.5em;
     overflow-y: hidden;
 }
 
 .header-headline {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: regular;
     padding: 0;
     margin: 0;
