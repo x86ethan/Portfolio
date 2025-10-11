@@ -4,17 +4,22 @@
         padding-bottom: 120px;
     }
 
+    .projects-expo {
+        width: 100%;
+    }
+
     .projects-expo-filters {
         display: flex;
         flex-wrap: wrap;
     }
 
     .project {
-        width: 100%;
+        width: inherit;
     }
 
     .project-image {
-        width: 100%;
+        min-width: initial;
+        width: inherit;
     }
 
     #project-page {
