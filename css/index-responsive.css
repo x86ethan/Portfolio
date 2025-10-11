@@ -158,23 +158,31 @@
         position: fixed;
         bottom: 0;
         top: unset !important;
-        
+    
+        padding: 0px 0px;
     
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100px;
 
+        padding: 10px;
+
         border-top: .5px solid black;
     }
 
     .nav-right {
-        gap: 25px;
+        gap: unset;
+        width: 100%;
+        justify-content: space-around;
+        /* background-color: blue; */
     }
 
     .nav-links {
-        gap: 25px;
+        flex: 4;
+        justify-content: space-around;
         height: 65px; 
+        gap: unset;
     }
 
     .nav-header {
@@ -202,6 +210,7 @@
     }
 
     .nav-link .icon {
+        display: block;
         height: 32px;
         width: 32px;
         padding: 5px 15px;
@@ -210,16 +219,19 @@
     }
 
     .language-selector {
+        flex: 1;
         height: 65px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        gap: 5px;
     }
 
     .language-selector .flag {
+        font-family: sans-serif;
         font-size: 32px;
-        line-height: 1.15em;
+        line-height: 32px;
         padding: 5px;
     }
 
@@ -231,6 +243,7 @@
         font-size: .7em !important;
         font-family: "Outfit";
         font-weight: 500;
+        display: block;
     }
 
     .language-choices {
