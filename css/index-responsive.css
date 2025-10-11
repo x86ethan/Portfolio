@@ -167,6 +167,8 @@
         height: 100px;
 
         padding: 10px;
+        transform: translateY(100px);
+        opacity: 0;
 
         border-top: .5px solid black;
     }

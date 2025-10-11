@@ -6,6 +6,17 @@ window.addEventListener('scroll', () => {
     } else {
         nav.classList.remove('nav-free');
     }
+
+    if (nav.style.bottom == 0) {
+        if (window.scrollY < scrollThreshold) {
+            nav.style.opacity = 0;
+            nav.style.transform = "translateY(100px)";
+            
+        } else {
+            nav.style.opacity = 1;
+            nav.style.transform = "translateY(0px)";
+        }
+    }
 	
     var page = Math.floor((window.scrollY + window.innerHeight / 2)/ window.innerHeight);
 
