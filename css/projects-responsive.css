@@ -1,30 +1,41 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
-    nav {
-        padding: 75px 25px 25px 25px;
-    }
-    
-    .nav-header {
-        display: none;
+    #section-projects {
+        padding-bottom: 120px;
     }
 
-    .content-wrapper, #content-wrapper {
-        padding: 0 25px;
-        box-sizing: border-box;
+    .projects-expo-filters {
+        display: flex;
+        flex-wrap: wrap;
     }
-
 
     .project {
         width: 100%;
     }
 
-    .project-image, #project-image {
-        min-width: calc(100vw - 50px);
+    .project-image {
+        width: 100%;
+    }
+
+    #project-page {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        border-radius: 0;
+        border: none;
+        flex-direction: column;
+
+        overflow-y: scroll;
     }
 
     #project-image {
-        min-height: 50vw;
-        height: 100%;
+        max-width: initial;
+    }
+
+    .project-text-wrapper {
+        overflow-y: visible; 
     }
 
 }

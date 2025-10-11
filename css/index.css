@@ -43,6 +43,7 @@ header {
     box-sizing: border-box;
 
     padding: 0 150px;
+    padding-top: 100px;
 }
 
 .header-information {

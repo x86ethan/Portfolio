@@ -220,6 +220,10 @@ nav > .nav-links > .nav-link::after {
     position: relative;
 }
 
+.nav-link .icon {
+    display: none;
+}
+
 .nav-link::after {
     content: "";
     position: absolute;
@@ -250,6 +254,17 @@ nav > .nav-links > .nav-link::after {
 
 .language-selector {
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.language-selection-text {
+    display: none;
 }
 
 .language-choices {
