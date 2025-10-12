@@ -7,14 +7,16 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('nav-free');
     }
 
-    if (nav.style.bottom == 0) {
+    // Check if the nav is at the bottom (mobile view)
+    const isMobileNav = window.getComputedStyle(nav).bottom === '0px';
+
+    if (isMobileNav) {
         if (window.scrollY < scrollThreshold) {
             nav.style.opacity = 0;
             nav.style.transform = "translateY(100px)";
-            
         } else {
             nav.style.opacity = 1;
-            nav.style.transform = "translateY(0px)";
+            nav.style.transform = "translateY(0)";
         }
     }
 	
