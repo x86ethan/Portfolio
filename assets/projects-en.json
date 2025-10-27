@@ -33,7 +33,19 @@
             "tech": "We knew we had to use Java. However, we were completely free regarding the lib or the support used. We knew it was impossible to achieve even a 2D user interface within only 3 days, so we came up with this powerful lib from Google: Lanterna. It allowed us to write efficient code that would put custom strings anywhere inside the terminal, dynamically erase parts of the screen, and manage dynamic user inputs.",
             "lessons": "The huge lesson, the elephant in the room when it comes to this project, is the usage of a small form of the agile method. It was mainly an experiment in order to allow us making our own mind about the scrum method. We learned that the most important with it was to keep every member of the team busy, to communicate as a team, and to keep being efficient. We learned that one isolated problem could lead to an empty backlog at the end of the sprint.",
             "github": "https://gitlab.univ-lille.fr/iut-info/p3.01/2025-2026/groupe-8"
+        },
+        {
+            "title": "Squirrel",
+            "short_description": "A source-based package manager for a lightweight Linux distribution",
+            "image": "/assets/projects/squirrel.png",
+            "tags": ["Python", "System"],
+            "intro": "Squirrel is a 'source-based' package manager (which does not use binary files; all packages are compiled from source code) that I developed for a lightweight Linux distribution, designed as an alternative to Gentoo. The goal was to simplify package management compared to Gentoo (since Portage tends to be quite heavy and complex), while retaining the benefits of compiling from source: fine-tuned optimization, dependency control, and minimal overhead.",
+            "challenge": "The main challenge was undoubtedly dependency management: since packages were source-based, it was essential to properly handle each package's compilation dependencies to ensure error-free builds. The second major issue was database maintainability. With only two developers, the question was how to manage frequent package updates without becoming overwhelmed.",
+            "tech": "Python was quickly chosen as the primary language: it offered all the advantages needed for this kind of project—lightweight, fluid, easy to write, and highly portable. We were also inspired by Portage, Gentoo's package manager, which is also written in Python. Since the goal was integration into a minimal Linux environment, the code was entirely tested in a minimal Linux virtual machine.",
+            "lessons": "The main lesson was how to manage dependencies: the solution was a recursive algorithm that added dependencies in order, prioritizing packages with no dependencies. Another major aspect of the project was database maintainability, which was addressed with a source monitoring system that automatically notified and updated source links. A potential improvement for this system today would be using an LLM to better manage the rewriting of build scripts and sources—avoiding irrelevant sources—and adapting them to new package versions.",
+            "github": "https://github.com/x86ethan/squirrel-ng"
         }
+
     ]
 }
 

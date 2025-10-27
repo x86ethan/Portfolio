@@ -33,6 +33,19 @@
             "tech": "On devait utiliser Java. Pour le reste, on était totalement libres. On a choisi la librairie Lanterna de Google, car c'était impossible d'atteindre une interface graphique en 3 jours. Lanterna nous a permis d'écrire du code efficace pour afficher du texte personnalisé, effacer dynamiquement l'écran et gérer les entrées utilisateur.",
             "lessons": "La plus grande leçon de ce projet, c'est l'utilisation d'une version simplifiée de la méthode Agile. C'était une expérience pour nous permettre de nous faire notre propre opinion sur la méthode Scrum. On a appris qu'il était essentiel de maintenir tous les membres de l'équipe occupés, de communiquer efficacement et de rester productifs. Un seul problème pouvait vider le backlog à la fin du sprint.",
             "github": "https://gitlab.univ-lille.fr/iut-info/p3.01/2025-2026/groupe-8"
+        },
+        {
+            "title": "Squirrel",
+            "short_description": "Un gestionnaire de paquets source-based pour une distribution Linux légère",
+            "image": "/assets/projects/squirrel.png",
+            "tags": ["Python", "Système"],
+            "intro": "Squirrel est un gestionnaire de paquets \"source-based\" (qui n'utilise pas de fichiers binaires ; tous les paquets sont compilés à partir du code source) que j'ai développé pour une distribution Linux légère, conçue comme alternative à Gentoo. L'objectif était de simplifier la gestion des paquets par-rapport à Gentoo (car Portage a tendance à être assez lourd et complexe), tout en conservant les avantages de la compilation depuis les sources : optimisation fine, contrôle des dépendances, et légèreté.",
+            "challenge": "Le principal défi était sans aucun doute la gestion des dépendances : étant donné que les paquets étaient basés sur la source, il fallait bien gérer les dépendances de compilation de chaque paquet, pour que chacun puisse bien compiler sans erreur de dépendance. Le second principal problème était la maintenabilité de la base de données. Étant donné que nous n'étions que 2 développeurs, la question était de savoir comment gérer les mises à jour fréquentes des paquets, sans se retrouver submergé.",
+            "tech": "Le choix de Python comme langage principal a très vite été fait : il présentait tous les avantages de ce genre de projet : légér, fluide, facile à écrire et très portable. Nous avons également été inspiré par Portage, le package manager de Gentoo, qui est également écrit en Python. Le but étant l'intégration à un environnement Linux minimal, le code a entièrement été testé dans une machine virtuelle Linux minimale.",
+            "lessons": "La principale leçon était la manière de gérer des dépendances : la solution à ce problème a été un algorithme récursif ajoutant les dépendances dans l'ordre, en privilégiant les paquets sans dépendances. Une autre grande partie du projet étant la maintenabilité de la base de données, ceci a facilement été réglé avec un système de surveillance des sources, qui se chargait de notifier et de mettre automatiquement à jour le lien vers les sources. Une piste d'amélioration pour ce système aujourd'hui serait l'utilisation d'un LLM pour mieux gérer la réécriture des scripts de compilation et les sources — éviter de choisir des sources non pertinentes — et les adapter aux nouvelles versions de paquets.",
+            "github": "https://github.com/x86ethan/squirrel-ng"
         }
+
+        
     ]
 }
