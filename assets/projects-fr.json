@@ -3,7 +3,7 @@
         {
             "title": "Apple Transports",
             "short_description": "Une application de covoiturage fictive inspirée de la philosophie de design d'Apple.",
-            "image": "/assets/projects/apple-transports.png",
+            "image": "/Portfolio/assets/projects/apple-transports.png",
             "tags": ["UI/UX Design", "Développement Web"],
             "intro": "Apple Transports était à l'origine un projet éducatif visant à imaginer, concevoir et produire une application de covoiturage écoresponsable basée sur le design d'une entreprise existante (Apple, dans ce cas).",
             "challenge": "Ce projet se voulait être une vitrine de nos compétences en design et en développement web. Même si nous n'avions pas le droit d'utiliser de scripting, nous voulions créer quelque chose de mémorable. Le défi consistait aussi à travailler en équipe sur un projet complexe. Au-delà du design et du développement, nous devions aussi étudier l'entreprise Apple, ses opportunités et les menaces sur le marché du covoiturage écoresponsable.",
@@ -15,7 +15,7 @@
         {
             "title": "Outil d'aide à la décision pour séjours linguistiques",
             "short_description": "Un outil fictif pour aider à la création de groupes d'étudiants lors de séjours linguistiques.",
-            "image": "/assets/projects/lang-tool.png",
+            "image": "/Portfolio/assets/projects/lang-tool.png",
             "tags": ["UI/UX Design", "Application", "Java"],
             "intro": "Ce projet est un peu le 'boss de fin' de la première année du BUT. Cette application n'est pas vraiment utile en soi, mais elle est une excellente vitrine des compétences en design d'interface et en développement que nous avons acquises cette année.",
             "challenge": "Le sujet était simple : une école avait besoin d'un outil pour former des binômes d'adolescents en fonction de leurs centres d'intérêt, âge, sexe, etc. Le tout en utilisant la théorie des graphes et nos cours d'interfaces. Les critères étaient tout aussi clairs : la meilleure application serait la plus fonctionnelle et la plus ergonomique.",
@@ -26,7 +26,7 @@
         {
             "title": "InfoPoly",
             "short_description": "Un jeu vidéo inspiré du célèbre jeu de plateau Monopoly, qui se déroule au sein du département Informatique de l'IUT de Lille.",
-            "image": "/assets/projects/plate.png",
+            "image": "/Portfolio/assets/projects/plate.png",
             "tags": ["Jeu", "Java"],
             "intro": "La victoire se construit case par case ! En tant qu'étudiant en BUT, tu essaies de valider chaque semestre. Mais le monde est cruel : il te faudra user de ton pouvoir et de ton influence pour avancer et corrompre les professeurs. Chaque année devient plus difficile et nécessite plus d'influence pour être validée. La question est : qui sera le premier, ou peut-être le seul, à être diplômé ?",
             "challenge": "Ce projet était le grand défi de l'été 2025. On nous a lancés dans le grand bain : coder un jeu en 20 heures, avec 5 étrangers, en utilisant la méthode Agile, sur des sprints de 2 heures. Chacun était Product Owner et le Scrum Master changeait deux fois par jour. On était libres de choisir le type de jeu. On a opté pour un jeu de plateau, car on n'avait que 3 jours et c'était le meilleur choix si on voulait rester sur un jeu en console. C'était impossible de sortir une interface graphique en si peu de temps.",
@@ -37,7 +37,7 @@
         {
             "title": "Squirrel",
             "short_description": "Un gestionnaire de paquets source-based pour une distribution Linux légère",
-            "image": "/assets/projects/squirrel.png",
+            "image": "/Portfolio/assets/projects/squirrel.png",
             "tags": ["Python", "Système"],
             "intro": "Squirrel est un gestionnaire de paquets \"source-based\" (qui n'utilise pas de fichiers binaires ; tous les paquets sont compilés à partir du code source) que j'ai développé pour une distribution Linux légère, conçue comme alternative à Gentoo. L'objectif était de simplifier la gestion des paquets par-rapport à Gentoo (car Portage a tendance à être assez lourd et complexe), tout en conservant les avantages de la compilation depuis les sources : optimisation fine, contrôle des dépendances, et légèreté.",
             "challenge": "Le principal défi était sans aucun doute la gestion des dépendances : étant donné que les paquets étaient basés sur la source, il fallait bien gérer les dépendances de compilation de chaque paquet, pour que chacun puisse bien compiler sans erreur de dépendance. Le second principal problème était la maintenabilité de la base de données. Étant donné que nous n'étions que 2 développeurs, la question était de savoir comment gérer les mises à jour fréquentes des paquets, sans se retrouver submergé.",

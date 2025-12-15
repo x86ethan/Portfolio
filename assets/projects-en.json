@@ -3,7 +3,7 @@
         {
             "title": "Apple Transports",
             "short_description": "A fictionnal carpooling application based on Apple's design philosophy.",
-            "image": "/assets/projects/apple-transports.png",
+            "image": "/Portfolio/assets/projects/apple-transports.png",
             "tags": ["UI/UX Design", "Web Development"],
             "intro": "Apple Transport was originally an educationnal project that aimed to imagine, design and produce an eco-friendly carpooling app based on the design of an existing company (Apple in this case). ",
             "challenge": "The project aimed to be a showcase of our web design and development skills. Even though we weren't allowed to use any form of scripting, we wanted to make something great, something rememberable. The challenge also consisted into working as a team in a complex project. Some sides of the project weren't only about design and development. We also had to study the Apple company, its opportunities and threats on the market of eco-friendly carpooling apps.",
@@ -15,7 +15,7 @@
         {
             "title": "Decision-making tool for language stays",
             "short_description": "A fictionnal tool to help creating student groups for language stays",
-            "image": "/assets/projects/lang-tool.png",
+            "image": "/Portfolio/assets/projects/lang-tool.png",
             "tags": ["UI/UX Design", "Application", "Java"],
             "intro": "This project is a bit of the \"final boss\" of the 1st year of the Bachelor's degree. This app isn't really useful, but it's a great showcase for the interface design and development skills we learned this year.",
             "challenge": "The subject was simple: there was a need for a school to have a tool that could help define teenager pairs based on their hobbies, age, sex, and so on. And all this, using graphs theory and our interface courses. The criteria were also simple: the best app is the one which works the best and is the most usable.",
@@ -26,7 +26,7 @@
         {
             "title": "InfoPoly",
             "short_description": "A video-game based on the popular board game 'Monopoly' that takes place in the IT department of the Universitary Institute of Technology of Lille.",
-            "image": "/assets/projects/plate.png",
+            "image": "/Portfolio/assets/projects/plate.png",
             "tags": ["Game", "Java"],
             "intro": "Victory compiles square by square! You are a bachelor student, trying to pass every semester. However, this world is cruel, and you shall definitely not work or stay honest if you want to pass. You will insted exercise your power and your influence to earn progress and to corrupt the teachers. Each year is more and more difficult, and needs more and more influence to get through. The question now is: who will be the first, or maybe the only one, to graduate?",
             "challenge": "This project is the huge boss that awaited us during all of 2025 summer. We already knew how it would happen: back to school, we would have a single hour class to explain the 2nd year, and then get dropped in the pool with 5 foreigners, and asked to code a game using the agile method. And all of this, in only 20 hours, with 2 hours long sprints. As it would be our game, we were all product owners. Who would be the scrum master would change 2 times a day. Now we were let to chose which type of game we wanted. We knew we whanted to do a board game, because we had only a few hours, and it was the best choice if we wanted to stay in the terminal, because with only 3 days to code, it would be impossible to come up at the end with some form of graphical user interface.",
@@ -37,7 +37,7 @@
         {
             "title": "Squirrel",
             "short_description": "A source-based package manager for a lightweight Linux distribution",
-            "image": "/assets/projects/squirrel.png",
+            "image": "/Portfolio/assets/projects/squirrel.png",
             "tags": ["Python", "System"],
             "intro": "Squirrel is a 'source-based' package manager (which does not use binary files; all packages are compiled from source code) that I developed for a lightweight Linux distribution, designed as an alternative to Gentoo. The goal was to simplify package management compared to Gentoo (since Portage tends to be quite heavy and complex), while retaining the benefits of compiling from source: fine-tuned optimization, dependency control, and minimal overhead.",
             "challenge": "The main challenge was undoubtedly dependency management: since packages were source-based, it was essential to properly handle each package's compilation dependencies to ensure error-free builds. The second major issue was database maintainability. With only two developers, the question was how to manage frequent package updates without becoming overwhelmed.",
